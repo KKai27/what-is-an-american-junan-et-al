@@ -1,5 +1,55 @@
-<!-- Add a temporary message in game screen to verify if it's showing up -->
-<div id="game-screen" class="screen hidden">
-  <h1>Game Screen</h1>
-  <p>Test if this shows up.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WIAA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Start Screen -->
+  <div id="start-screen" class="screen">
+    <h1>WIAA</h1>
+    <label for="player-name">Enter your name:</label>
+    <input type="text" id="player-name">
+    <button id="start-button">Start</button>
+  </div>
+
+  <!-- Character Selection Screen -->
+  <div id="character-selection" class="screen hidden">
+    <h1>Choose Your Character</h1>
+    <div class="character-cards">
+      <div class="card" data-character="Chinese Immigrant">Chinese Immigrant</div>
+      <div class="card" data-character="German Immigrant">German Immigrant</div>
+      <div class="card" data-character="Factory Worker">Factory Worker</div>
+      <div class="card" data-character="Factory Owner">Factory Owner</div>
+      <div class="card" data-character="Slave">Slave</div>
+      <div class="card" data-character="Slave Owner">Slave Owner</div>
+    </div>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-screen" class="screen hidden">
+    <h1 id="objective">Objective: </h1>
+    <p id="scenario">Scenario will appear here</p>
+    <div id="choices">
+      <button>Choice A</button>
+      <button>Choice B</button>
+    </div>
+    <div id="progress-bar-container">
+      <div id="progress-bar"></div>
+    </div>
+  </div>
+
+  <!-- End Screen -->
+  <div id="end-screen" class="screen hidden">
+    <h1>Game Over</h1>
+    <p id="final-score">Your score:</p>
+    <h2>Leaderboard</h2>
+    <ul id="leaderboard"></ul>
+    <button id="restart-button">Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
