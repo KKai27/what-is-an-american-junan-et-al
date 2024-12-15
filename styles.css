@@ -6,12 +6,12 @@ body {
   color: #333;
 }
 
-.screen {
+/* .screen {
   display: none;
   text-align: center;
   padding: 20px;
 }
-/* 
+
 .screen h1, .screen h2 {
   color: #8b4513;
 }
@@ -73,7 +73,4 @@ body {
 #final-score {
   font-size: 24px;
   color: #8b0000;
-}
-/
-
- */
+} */
